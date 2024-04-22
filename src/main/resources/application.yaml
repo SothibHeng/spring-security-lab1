@@ -1,0 +1,19 @@
+#spring.application.name=basic-spring-security
+#spring.security.user.name=james
+#spring.security.user.password=123
+server:
+  port: 8080
+spring:
+  application:
+    name: basic-spring-security
+  datasource:
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5433/spring-security-db
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update # or update
+    generate-ddl: true
+
